@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5분韓国語（ごふん） - 毎日5分で話せるようになる韓国語学習アプリ</title>
+    <meta name="description" content="1日5分、100日で韓国語が話せる！日常会話から恋愛表現、ビジネス韓国語まで。推し活・韓ドラ・K-POPファン必見の楽しく学べる韓国語アプリ。">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap');
+        
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .phone-mockup {
+            position: relative;
+            width: 300px;
+            height: 600px;
+            border-radius: 40px;
+            padding: 12px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+        
+        .phone-screen {
+            width: 100%;
+            height: 100%;
+            border-radius: 30px;
+            overflow: hidden;
+            background: white;
+        }
+        
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        .app-badge {
+            height: 50px;
+            width: auto;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+        }
+        
+        .feature-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- ヘッダー -->
+    <header class="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 shadow-sm">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                    <div class="w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center text-white font-bold text-xl">
+                        5분
+                    </div>
+                    <span class="text-xl font-bold gradient-text">韓国語（ごふん）</span>
+                </div>
+                <div class="hidden md:flex gap-6">
+                    <a href="#features" class="text-gray-700 hover:text-purple-600 transition">機能</a>
+                    <a href="#how-it-works" class="text-gray-700 hover:text-purple-600 transition">使い方</a>
+                    <a href="#pricing" class="text-gray-700 hover:text-purple-600 transition">料金</a>
+                    <a href="#download" class="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-2 rounded-full hover:shadow-lg transition">
+                        ダウンロード
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ヒーローセクション -->
+    <section class="hero-gradient text-white pt-32 pb-20 px-4 overflow-hidden">
+        <div class="container mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-center md:text-left">
+                    <div class="inline-block bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
+                        <span class="text-sm font-semibold">🔥 100万ダウンロード突破！</span>
+                    </div>
+                    <h1 class="text-5xl md:text-6xl font-black mb-6 leading-tight">
+                        毎日5分で<br/>
+                        韓国語が<br/>
+                        話せるようになる
+                    </h1>
+                    <p class="text-xl md:text-2xl mb-8 text-white/90">
+                        推し活・韓ドラ・K-POPファン必見！<br/>
+                        100日で日常会話からビジネスまで完全マスター
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mb-8">
+                        <a href="#download" class="bg-white text-purple-600 px-8 py-4 rounded-full font-bold text-lg hover:shadow-2xl transition transform hover:scale-105">
+                            無料で始める →
+                        </a>
+                        <a href="#how-it-works" class="bg-white/20 backdrop-blur-sm text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white/30 transition">
+                            使い方を見る
+                        </a>
+                    </div>
+                    <div class="flex items-center gap-6 justify-center md:justify-start">
+                        <div class="flex items-center gap-2">
+                            <span class="text-4xl font-bold">4.8</span>
+                            <div>
+                                <div class="text-yellow-300">★★★★★</div>
+                                <p class="text-xs text-white/80">50,000+ レビュー</p>
+                            </div>
+                        </div>
+                        <div class="w-px h-12 bg-white/30"></div>
+                        <div>
+                            <p class="text-3xl font-bold">3日間</p>
+                            <p class="text-sm text-white/80">無料トライアル</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- スマホモックアップ -->
+                <div class="flex justify-center relative">
+                    <div class="phone-mockup floating">
+                        <div class="phone-screen">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 600'%3E%3Cdefs%3E%3ClinearGradient id='bg' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23fce4ec'/%3E%3Cstop offset='50%25' style='stop-color:%23f3e5f5'/%3E%3Cstop offset='100%25' style='stop-color:%23e3f2fd'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='300' height='600' fill='url(%23bg)'/%3E%3Ctext x='150' y='80' font-size='40' font-weight='bold' text-anchor='middle' fill='%239c27b0'%3E5분韓国語%3C/text%3E%3Ctext x='150' y='110' font-size='14' text-anchor='middle' fill='%23666'%3E毎日5分で話せるようになる%3C/text%3E%3Crect x='30' y='140' width='240' height='120' rx='20' fill='url(%23grad1)'/%3E%3ClinearGradient id='grad1' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%239c27b0'/%3E%3Cstop offset='100%25' style='stop-color:%23ec407a'/%3E%3C/linearGradient%3E%3Ctext x='150' y='180' font-size='12' text-anchor='middle' fill='white' opacity='0.8'%3EDay 1 - 挨拶%3C/text%3E%3Ctext x='150' y='205' font-size='24' font-weight='bold' text-anchor='middle' fill='white'%3Eこんにちは%3C/text%3E%3Ctext x='150' y='235' font-size='32' font-weight='bold' text-anchor='middle' fill='white'%3E안녕하세요%3C/text%3E%3Ccircle cx='60' cy='320' r='30' fill='%23ff9800'/%3E%3Ctext x='60' y='330' font-size='24' text-anchor='middle' fill='white'%3E🔥%3C/text%3E%3Ctext x='60' y='360' font-size='12' text-anchor='middle' fill='%23666'%3E連続7日%3C/text%3E%3Ccircle cx='150' cy='320' r='30' fill='%23ffc107'/%3E%3Ctext x='150' y='330' font-size='24' text-anchor='middle' fill='white'%3E⭐%3C/text%3E%3Ctext x='150' y='360' font-size='12' text-anchor='middle' fill='%23666'%3E完了10日%3C/text%3E%3Ccircle cx='240' cy='320' r='30' fill='%232196f3'/%3E%3Ctext x='240' y='330' font-size='24' text-anchor='middle' fill='white'%3E📈%3C/text%3E%3Ctext x='240' y='360' font-size='12' text-anchor='middle' fill='%23666'%3E50分%3C/text%3E%3Crect x='30' y='390' width='240' height='60' rx='30' fill='url(%23grad2)'/%3E%3ClinearGradient id='grad2' x1='0%25' y1='0%25' x2='100%25' y2='0%25'%3E%3Cstop offset='0%25' style='stop-color:%239c27b0'/%3E%3Cstop offset='100%25' style='stop-color:%23ec407a'/%3E%3C/linearGradient%3E%3Ctext x='150' y='425' font-size='18' font-weight='bold' text-anchor='middle' fill='white'%3E✨ 今日の5分を始める%3C/text%3E%3C/svg%3E" alt="アプリスクリーンショット" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                    <!-- 浮遊要素 -->
+                    <div class="absolute -top-10 -left-10 bg-white rounded-2xl p-4 shadow-xl" style="animation: floating 2s ease-in-out infinite;">
+                        <p class="text-2xl">👋</p>
+                        <p class="text-xs font-bold text-purple-600">안녕하세요</p>
+                    </div>
+                    <div class="absolute -bottom-10 -right-10 bg-white rounded-2xl p-4 shadow-xl" style="animation: floating 2.5s ease-in-out infinite;">
+                        <p class="text-2xl">💖</p>
+                        <p class="text-xs font-bold text-pink-600">사랑해요</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 特徴セクション -->
+    <section id="features" class="py-20 px-4 bg-gray-50">
+        <div class="container mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-black mb-4 gradient-text">なぜ5분韓国語？</h2>
+                <p class="text-xl text-gray-600">他のアプリとは違う、続けられる理由</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- 特徴1 -->
+                <div class="feature-card bg-white rounded-3xl p-8 shadow-lg">
+                    <div class="w-16 h-16 bg-gradient-to-br from-purple-400 to-pink-400 rounded-2xl flex items-center justify-center text-3xl mb-6">
+                        ⏱️
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">1日たった5分</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        忙しいあなたでも大丈夫。通勤中、寝る前、ちょっとした空き時間に。負担ゼロで続けられる設計。
+                    </p>
+                    <div class="mt-6 bg-purple-50 rounded-xl p-4">
+                        <p class="text-sm text-purple-700 font-semibold">✓ 1レッスン5分で完結</p>
+                        <p class="text-sm text-purple-700 font-semibold">✓ スキップ機能あり</p>
+                        <p class="text-sm text-purple-700 font-semibold">✓ 自分のペースでOK</p>
+                    </div>
+                </div>
+
+                <!-- 特徴2 -->
+                <div class="feature-card bg-white rounded-3xl p-8 shadow-lg">
+                    <div class="w-16 h-16 bg-gradient-to-br from-blue-400 to-purple-400 rounded-2xl flex items-center justify-center text-3xl mb-6">
+                        💝
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">推し活で覚える</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        韓ドラ・K-POP・推し活で使える表現が満載。好きなテーマで楽しく学べるから、三日坊主にならない。
+                    </p>
+                    <div class="mt-6 bg-blue-50 rounded-xl p-4">
+                        <p class="text-sm text-blue-700 font-semibold">✓ 推しへのファンレター</p>
+                        <p class="text-sm text-blue-700 font-semibold">✓ コンサートで使える応援</p>
+                        <p class="text-sm text-blue-700 font-semibold">✓ SNSでのコメント</p>
+                    </div>
+                </div>
+
+                <!-- 特徴3 -->
+                <div class="feature-card bg-white rounded-3xl p-8 shadow-lg">
+                    <div class="w-16 h-16 bg-gradient-to-br from-pink-400 to-orange-400 rounded-2xl flex items-center justify-center text-3xl mb-6">
+                        🎯
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">100日で完全マスター</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        段階的カリキュラムで確実に成長。日常会話→恋愛表現→ビジネス韓国語まで100%話せるようになる。
+                    </p>
+                    <div class="mt-6 bg-pink-50 rounded-xl p-4">
+                        <p class="text-sm text-pink-700 font-semibold">✓ Day 1-20: 基礎</p>
+                        <p class="text-sm text-pink-700 font-semibold">✓ Day 41-60: 恋愛会話</p>
+                        <p class="text-sm text-pink-700 font-semibold">✓ Day 81-100: ビジネス</p>
+                    </div>
+                </div>
+
+                <!-- 特徴4 -->
+                <div class="feature-card bg-white rounded-3xl p-8 shadow-lg">
+                    <div class="w-16 h-16 bg-gradient-to-br from-green-400 to-teal-400 rounded-2xl flex items-center justify-center text-3xl mb-6">
+                        🎤
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">発音チェック機能</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        AIがあなたの発音を判定。ネイティブレベルの発音を目指せる。何度でも練習できるから安心。
+                    </p>
+                </div>
+
+                <!-- 特徴5 -->
+                <div class="feature-card bg-white rounded-3xl p-8 shadow-lg">
+                    <div class="w-16 h-16 bg-gradient-to-br from-yellow-400 to-orange-400 rounded-2xl flex items-center justify-center text-3xl mb-6">
+                        📚
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">自分だけの例文帳</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        学習した内容が自動で例文帳に。復習もラクラク。あなただけの韓国語帳が育っていく。
+                    </p>
+                </div>
+
+                <!-- 特徴6 -->
+                <div class="feature-card bg-white rounded-3xl p-8 shadow-lg">
+                    <div class="w-16 h-16 bg-gradient-to-br from-red-400 to-pink-400 rounded-2xl flex items-center justify-center text-3xl mb-6">
+                        🔥
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">連続記録で継続</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        ストリーク機能でモチベーション維持。7日、30日、100日連続達成でバッジをゲット！
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 使い方セクション -->
+    <section id="how-it-works" class="py-20 px-4">
+        <div class="container mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-black mb-4 gradient-text">簡単3ステップ</h2>
+                <p class="text-xl text-gray-600">今日から始められる、シンプルな学習フロー</p>
+            </div>
+
+            <div class="max-w-4xl mx-auto space-y-12">
+                <!-- ステップ1 -->
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="flex-1 text-center md:text-left">
+                        <div class="inline-block bg-gradient-to-r from-purple-500 to-pink-500 text-white text-3xl font-bold rounded-full w-16 h-16 flex items-center justify-center mb-4">
+                            1
+                        </div>
+                        <h3 class="text-3xl font-bold mb-4">今日の5分を開始</h3>
+                        <p class="text-lg text-gray-600 leading-relaxed">
+                            アプリを開いたら「今日の5分」ボタンをタップ。それだけで今日の学習がスタート。迷うことはありません。
+                        </p>
+                    </div>
+                    <div class="w-64 h-64 bg-gradient-to-br from-purple-100 to-pink-100 rounded-3xl flex items-center justify-center shadow-xl">
+                        <span class="text-8xl">📱</span>
+                    </div>
+                </div>
+
+                <!-- ステップ2 -->
+                <div class="flex flex-col md:flex-row-reverse items-center gap-8">
+                    <div class="flex-1 text-center md:text-left">
+                        <div class="inline-block bg-gradient-to-r from-blue-500 to-purple-500 text-white text-3xl font-bold rounded-full w-16 h-16 flex items-center justify-center mb-4">
+                            2
+                        </div>
+                        <h3 class="text-3xl font-bold mb-4">書く→話す→使う</h3>
+                        <p class="text-lg text-gray-600 leading-relaxed">
+                            ハングルを書いて、発音して、クイズで定着。1つの流れで完結するから、効率的に覚えられます。
+                        </p>
+                    </div>
+                    <div class="w-64 h-64 bg-gradient-to-br from-blue-100 to-purple-100 rounded-3xl flex items-center justify-center shadow-xl">
+                        <span class="text-8xl">✍️</span>
+                    </div>
+                </div>
+
+                <!-- ステップ3 -->
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="flex-1 text-center md:text-left">
+                        <div class="inline-block bg-gradient-to-r from-pink-500 to-orange-500 text-white text-3xl font-bold rounded-full w-16 h-16 flex items-center justify-center mb-4">
+                            3
+                        </div>
+                        <h3 class="text-3xl font-bold mb-4">成長を実感</h3>
+                        <p class="text-lg text-gray-600 leading-relaxed">
+                            毎日の積み重ねが目に見える。連続記録、完了日数、学習時間。あなたの成長がグラフで分かります。
+                        </p>
+                    </div>
+                    <div class="w-64 h-64 bg-gradient-to-br from-pink-100 to-orange-100 rounded-3xl flex items-center justify-center shadow-xl">
+                        <span class="text-8xl">📊</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 料金セクション -->
+    <section id="pricing" class="py-20 px-4 bg-gray-50">
+        <div class="container mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-black mb-4 gradient-text">料金プラン</h2>
+                <p class="text-xl text-gray-600">まずは3日間、すべての機能を無料で</p>
+            </div>
+
+            <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
+                <!-- 無料プラン -->
+                <div class="bg-white rounded-3xl p-8 shadow-lg border-2 border-gray-200">
+                    <h3 class="text-2xl font-bold mb-4">無料プラン</h3>
+                    <div class="mb-6">
+                        <span class="text-5xl font-black">¥0</span>
+                        <span class="text-gray-600">/月</span>
+                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start gap-3">
+                            <span class="text-green-500 text-xl">✓</span>
+                            <span>1日5分の基本レッスン</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-green-500 text-xl">✓</span>
+                            <span>100日分のカリキュラム</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-green-500 text-xl">✓</span>
+                            <span>発音チェック（1日3回まで）</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-green-500 text-xl">✓</span>
+                            <span>例文帳（直近7日分）</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-gray-300 text-xl">✗</span>
+                            <span class="text-gray-400">AI会話レッスン</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-gray-300 text-xl">✗</span>
+                            <span class="text-gray-400">推し・韓ドラコース</span>
+                        </li>
+                    </ul>
+                    <button class="w-full bg-gray-200 text-gray-700 py-4 rounded-full font-bold text-lg">
+                        無料で始める
+                    </button>
+                </div>
+
+                <!-- プレミアムプラン -->
+                <div class="bg-gradient-to-br from-purple-500 to-pink-500 rounded-3xl p-8 shadow-2xl text-white relative overflow-hidden">
+                    <div class="absolute top-4 right-4 bg-yellow-400 text-purple-900 px-4 py-1 rounded-full text-sm font-bold">
+                        人気No.1
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 flex items-center gap-2">
+                        <span>👑</span>
+                        プレミアムプラン
+                    </h3>
+                    <div class="mb-2">
+                        <span class="text-5xl font-black">¥980</span>
+                        <span class="text-white/80">/月</span>
+                    </div>
+                    <p class="text-sm text-white/80 mb-6">年額 ¥9,800（2ヶ月分お得）</p>
+                    <div class="bg-white/20 backdrop-blur-sm rounded-2xl p-4 mb-6">
+                        <p class="font-bold text-center">🎁 3日間無料トライアル</p>
+                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start gap-3">
+                            <span class="text-yellow-300 text-xl">✓</span>
+                            <span>無料プランのすべての機能</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-yellow-300 text-xl">✓</span>
+                            <span>AI会話レッスン無制限</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-yellow-300 text-xl">✓</span>
+                            <span>発音チェック無制限</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-yellow-300 text-xl">✓</span>
+                            <span>推し・韓ドラ・旅行コース</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-yellow-300 text-xl">✓</span>
+                            <span>例文帳無制限＆自動整理</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-yellow-300 text-xl">✓</span>
+                            <span>連続記録保険（月2回）</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-yellow-300 text-xl">✓</span>
+                            <span>オフライン学習</span>
+                        </li>
+                    </ul>
+                    <button class="w-full bg-white text-purple-600 py-4 rounded-full font-bold text-lg hover:shadow-2xl transition transform hover:scale-105">
+                        3日間無料で試す
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ユーザーの声 -->
+    <section class="py-20 px-4">
+        <div class="container mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-black mb-4 gradient-text">ユーザーの声</h2>
+                <p class="text-xl text-gray-600">実際に使っている方々の体験談</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- レビュー1 -->
+                <div class="bg-white rounded-3xl p-8 shadow-lg">
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="text-yellow-400">★★★★★</div>
+                    </div>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        「推しのライブで韓国語で応援できました！3ヶ月でここまで話せるようになるなんて感動です🥺」
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-purple-200 rounded-full flex items-center justify-center text-2xl">
+                            👩
+                        </div>
+                        <div>
+                            <p class="font-bold">さくらさん</p>
+                            <p class="text-sm text-gray-500">24歳 会社員</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- レビュー2 -->
+                <div class="bg-white rounded-3xl p-8 shadow-lg">
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="text-yellow-400">★★★★★</div>
+                    </div>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        「仕事で韓国出張が決まって焦っていましたが、ビジネス韓国語コースのおかげで無事プレゼンできました！」
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-blue-200 rounded-full flex items-center justify-center text-2xl">
+                            👨
+                        </div>
+                        <div>
+                            <p class="font-bold">たけしさん</p>
+                            <p class="text-sm text-gray-500">32歳 営業職</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- レビュー3 -->
+                <div class="bg-white rounded-3xl p-8 shadow-lg">
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="text-yellow-400">★★★★★</div>
+                    </div>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        「韓ドラを字幕なしで見るのが夢でした。今では簡単な会話なら聞き取れます💕毎日5分だから続けられました！」
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-pink-200 rounded-full flex items-center justify-center text-2xl">
+                            👩
+                        </div>
+                        <div>
+                            <p class="font-bold">みゆきさん</p>
+                            <p class="text-sm text-gray-500">28歳 主婦</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ダウンロードセクション -->
+    <section id="download" class="py-20 px-4 hero-gradient text-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl md:text-5xl font-black mb-6">今すぐ始めよう</h2>
+            <p class="text-xl mb-12">3日間無料ですべての機能が使えます</p>
+            
+            <div class="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
+                <!-- App Store Badge -->
+                <a href="#" class="transform hover:scale-105 transition">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='60' viewBox='0 0 200 60'%3E%3Crect width='200' height='60' rx='10' fill='black'/%3E%3Ctext x='60' y='20' font-family='Arial' font-size='10' fill='white'%3EDownload on the%3C/text%3E%3Ctext x='60' y='40' font-family='Arial' font-size='18' font-weight='bold' fill='white'%3EApp Store%3C/text%3E%3Cpath d='M30,15 L35,25 L25,25 Z M35,30 L40,40 L30,40 Z' fill='white'/%3E%3C/svg%3E" alt="App Store" class="app-badge">
+                </a>
+                
+                <!-- Google Play Badge -->
+                <a href="#" class="transform hover:scale-105 transition">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='60' viewBox='0 0 200 60'%3E%3Crect width='200' height='60' rx='10' fill='black'/%3E%3Ctext x='60' y='20' font-family='Arial' font-size='10' fill='white'%3EGET IT ON%3C/text%3E%3Ctext x='60' y='40' font-family='Arial' font-size='18' font-weight='bold' fill='white'%3EGoogle Play%3C/text%3E%3Cpath d='M25,15 L40,30 L25,45 Z' fill='%234285F4'/%3E%3Cpath d='M25,15 L40,30 L35,35 Z' fill='%23EA4335'/%3E%3Cpath d='M25,45 L40,30 L35,25 Z' fill='%23FBBC04'/%3E%3Cpath d='M40,30 L35,35 L35,25 Z' fill='%2334A853'/%3E%3C/svg%3E" alt="Google Play" class="app-badge">
+                </a>
+            </div>
+
+            <div class="flex items-center gap-6 justify-center text-sm">
+                <div class="flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
+                    </svg>
+                    <span>無料でダウンロード</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
+                    </svg>
+                    <span>クレジットカード不要</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
+                    </svg>
+                    <span>いつでもキャンセルOK</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="bg-gray-900 text-white py-12 px-4">
+        <div class="container mx-auto">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center text-white font-bold">
+                            5분
+                        </div>
+                        <span class="text-xl font-bold">韓国語</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">
+                        毎日5分で韓国語が話せるようになる、楽しく続けられる学習アプリ
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">アプリ</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#features" class="hover:text-white transition">機能</a></li>
+                        <li><a href="#how-it-works" class="hover:text-white transition">使い方</a></li>
+                        <li><a href="#pricing" class="hover:text-white transition">料金</a></li>
+                        <li><a href="#download" class="hover:text-white transition">ダウンロード</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">サポート</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="mailto:support@turtlefit.jp" class="hover:text-white transition">お問い合わせ</a></li>
+                        <li><a href="#" class="hover:text-white transition">よくある質問</a></li>
+                        <li><a href="#" class="hover:text-white transition">使い方ガイド</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">法的情報</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="privacy.html" class="hover:text-white transition">プライバシーポリシー</a></li>
+                        <li><a href="terms.html" class="hover:text-white transition">利用規約</a></li>
+                        <li><a href="#" class="hover:text-white transition">特定商取引法に基づく表記</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center text-sm text-gray-400">
+                <p>&copy; 2025 5분韓国語. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // スムーズスクロール
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
